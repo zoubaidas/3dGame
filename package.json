@@ -1,0 +1,31 @@
+{
+  "name": "09-project-the-team",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve --port 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tweb-classroom/09-project-the-team.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tweb-classroom/09-project-the-team/issues"
+  },
+  "homepage": "https://github.com/tweb-classroom/09-project-the-team#readme",
+  "devDependencies": {
+    "@babylonjs/core": "^4.2.0",
+    "@babylonjs/inspector": "^4.2.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^4.5.0",
+    "ts-loader": "^8.0.13",
+    "typescript": "^4.1.3",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.1"
+  }
+}
