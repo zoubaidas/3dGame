@@ -2,7 +2,7 @@ import "@babylonjs/core/Debug/debugLayer";
 import "@babylonjs/inspector";
 import "@babylonjs/loaders/glTF";
 import { AdvancedDynamicTexture, Button, Control } from "@babylonjs/gui";
-import { Engine, Scene, ArcRotateCamera, Vector3, HemisphericLight, Mesh, MeshBuilder, Color4, Effect, FreeCamera, PostProcess } from "@babylonjs/core";
+import { Engine, Scene, ArcRotateCamera, Vector3, HemisphericLight, Mesh, MeshBuilder, Color4, Effect, FreeCamera, PostProcess, SceneLoader, CubeTexture, StandardMaterial, Texture, Color3 } from "@babylonjs/core";
 
 //enum for states
 enum State { START = 0, GAME = 1, LOSE = 2, CUTSCENE = 3 }
@@ -22,7 +22,21 @@ class App {
         var camera: ArcRotateCamera = new ArcRotateCamera("Camera", Math.PI / 2, Math.PI / 2, 2, Vector3.Zero(), this._scene);
         camera.attachControl(this._canvas, true);
         var light1: HemisphericLight = new HemisphericLight("light1", new Vector3(1, 1, 0), this._scene);
-        var sphere: Mesh = MeshBuilder.CreateSphere("sphere", { diameter: 1 }, this._scene);
+       // var sphere: Mesh = MeshBuilder.CreateSphere("sphere", { diameter: 1 }, this._scene);
+        
+       SceneLoader.ImportMesh("", "https://models.babylonjs.com/", "aerobatic_plane.glb", this._scene);
+
+// Skybox
+var skybox = MeshBuilder.CreateBox("skyBox", {size:1000.0}, this._scene);
+var skyboxMaterial = new StandardMaterial("skyBox", this._scene);
+skyboxMaterial.backFaceCulling = false;
+skyboxMaterial.reflectionTexture = new CubeTexture("https://www.babylonjs-playground.com/textures/skybox", this._scene);
+skyboxMaterial.reflectionTexture.coordinatesMode = Texture.SKYBOX_MODE;
+skyboxMaterial.diffuseColor = new Color3(0, 0, 0);
+skyboxMaterial.specularColor = new Color3(0, 0, 0);
+skybox.material = skyboxMaterial;			
+    
+      
         // hide/show the Inspector
         window.addEventListener("keydown", (ev) => {
             // Shift+Ctrl+Alt+I
@@ -107,7 +121,7 @@ class App {
 
         //this handles interactions with the start button attached to the scene
         startBtn.onPointerDownObservable.add(() => {
-            this._goToCutScene();
+           // this._goToCutScene();
             scene.detachControl(); //observables disabled
         });
 
