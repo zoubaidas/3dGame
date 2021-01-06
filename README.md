@@ -7,9 +7,29 @@ The original game features vehicles that can send rockets. these rockets can inj
 The game server is multiplayer, other players can join the game.
 https://github.com/tweb-classroom/07-websocket-solution
 
-For this project we have chosen 2 improvements to make: Improve the gameplay, create a 3d version of the game.
+For this project we have chosen 2 improvements to make: 
+- Create a 3d version of the game.
+- Improve the gameplay.
 
-
-### Improve the gameplay
 
 ### 3D
+#### Game UI: 
+  Game scene:
+  Score scene:
+  Sounds and Music: 
+  
+#### Camera
+Third-person shooter (TPS) or/and First-person shooter(FPS)
+
+#### Map
+A large empty cube that represents the sky with a terrain below
+
+#### Plane movement
+
+#### Models
+
+### Improve the gameplay
+the starting situation: 
+Goal : 
+Rules:
+End-of-game conditions and victory
