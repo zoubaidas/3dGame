@@ -1,4 +1,4 @@
-# Flight simulator
+# Flight shooter simulator
 
 ### Introduction
 
@@ -13,10 +13,10 @@ For this project we have chosen 2 improvements to make:
 
 
 ### 1. 3D
-#### Game UI: 
-  Game scene:
-  Score scene:
-  Sounds and Music: 
+#### Game UI 
+  Game scene: A single scene for the entire application 
+  Score scene: A scoreboard with game results
+  Sounds and Music: Game music, vehicule engine sound, crash sounds, hitting targets sounds.
   
 #### Camera
 Third-person shooter (TPS) or/and First-person shooter(FPS)
@@ -26,10 +26,21 @@ A large empty cube that represents the sky with a terrain below
 
 #### Plane movement
 
+The plane moves straight ahead on its own.
+Click to toggle course Lock.
+Up Arrow to accelerate.
+Down Arrow to decelerate.
+Mouse as aircraft stick or yoke:
+Mouse up/down : to go up/down.
+Mouse Left/right : to turn.
+Space to shoot:
+
 #### Models
+Imported from the  internet 
 
 ### 2. Improve the gameplay
-#### the starting situation 
+
 #### Goal
 #### Rules
+#### the starting situation 
 #### End-of-game conditions and victory
