@@ -14,33 +14,45 @@ For this project we have chosen 2 improvements to make:
 
 ### 1. 3D
 #### Game UI 
-  Game scene: A single scene for the entire application 
-  Score scene: A scoreboard with game results
-  Sounds and Music: Game music, vehicule engine sound, crash sounds, hitting targets sounds.
+  - Game scene: A single scene where tha game take place.  
+  - Score scene: A scoreboard with game results.  
+  - Sounds and Music: Game music, vehicule engine sound, crash sounds, hitting targets sounds.
   
 #### Camera
 Third-person shooter (TPS) or/and First-person shooter(FPS)
 
 #### Map
-A large empty cube that represents the sky with a terrain below
+A large empty cube that represents the sky with a terrain below.
+Like the original game, when the plane reaches the limit of the map, it comes out on the other side
 
 #### Plane movement
 
 The plane moves straight ahead on its own.
-Click to toggle course Lock.
-Up Arrow to accelerate.
-Down Arrow to decelerate.
-Mouse as aircraft stick or yoke:
-Mouse up/down : to go up/down.
-Mouse Left/right : to turn.
-Space to shoot:
+- Click to toggle course Lock.
+- Up Arrow to accelerate.
+- Down Arrow to decelerate.
+- Mouse as aircraft stick or yoke:
+- Mouse up/down : to go up/down.
+- Mouse Left/right : to turn.
+- Space bar to shoot
 
 #### Models
+Planes, targets, skybox, terrain.   
 Imported from the  internet 
 
 ### 2. Improve the gameplay
 
-#### Goal
+#### Goal 
+The goal of the game is to gain the maximum number of points within the time limit.
+
 #### Rules
+- There will be floating targets in the sky. when the player hits the target, he destroys it and earns points.
+- When the plane hits the ground, it crashes.
+- When the plane hits another plane, it crashes.
+- When the plane crashes, the player loses points and rejoins the game after a few seconds
+
 #### the starting situation 
+The player that joins the game, finds himself directly in game with 0 points.
+
 #### End-of-game conditions and victory
+At the end of the fixed time, the player's score is displayed.
