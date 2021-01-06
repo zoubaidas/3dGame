@@ -22,7 +22,7 @@ For this project we have chosen 2 improvements to make:
 Third-person shooter (TPS) or/and First-person shooter(FPS)
 
 #### Map
-A large empty cube that represents the sky with a terrain below.
+A large empty cube that represents the sky with a solid ground terrain below.
 Like the original game, when the plane reaches the limit of the map, it comes out on the other side
 
 #### Plane movement
