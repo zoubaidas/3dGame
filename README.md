@@ -12,7 +12,7 @@ For this project we have chosen 2 improvements to make:
 - Improve the gameplay.
 
 
-### 3D
+### 1. 3D
 #### Game UI: 
   Game scene:
   Score scene:
@@ -28,7 +28,7 @@ A large empty cube that represents the sky with a terrain below
 
 #### Models
 
-### Improve the gameplay
+### 2. Improve the gameplay
 the starting situation: 
 Goal : 
 Rules:
